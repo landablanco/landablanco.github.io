@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Color option: Oxford navy -->
+<title>Miguel Landa-Blanco — Research Psychologist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f7f6f1;--paper-2:#edece4;--ink:#101820;--ink-soft:#374151;--ink-faint:#6b7280;
+  --rule:#c9c4b8;--oxblood:#183a59;--oxblood-deep:#10283f;--gold:#9b7a3f;
+  --display:"Fraunces",Georgia,serif;--body:"Newsreader",Georgia,serif;--maxw:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:19px;line-height:1.6;font-weight:380;overflow-x:hidden;
+  background-image:radial-gradient(circle at 12% 18%, rgba(24,58,89,.06), transparent 38%),radial-gradient(circle at 88% 8%, rgba(155,122,63,.07), transparent 42%);}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");mix-blend-mode:multiply;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;position:relative;z-index:2}
+a{color:inherit}
+::selection{background:var(--oxblood);color:var(--paper)}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(8px);background:rgba(244,240,230,.82);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:var(--maxw);margin:0 auto;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav-mark{font-family:var(--display);font-weight:600;letter-spacing:.01em;font-size:18px;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.nav-mark .psi{color:var(--oxblood);font-size:21px}
+.nav-right{display:flex;align-items:center;gap:26px}
+.nav-links{display:flex;gap:26px;font-size:14px;letter-spacing:.06em;text-transform:uppercase;font-family:var(--display);font-weight:500}
+.nav-links a{text-decoration:none;color:var(--ink-soft);position:relative;padding-bottom:3px;transition:color .25s}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--oxblood);transition:width .3s ease}
+.nav-links a:hover{color:var(--oxblood)}
+.nav-links a:hover::after{width:100%}
+.langbtn{font-family:var(--display);font-size:13px;letter-spacing:.1em;font-weight:600;background:transparent;border:1.5px solid var(--ink);color:var(--ink);padding:6px 13px;cursor:pointer;transition:all .2s;flex-shrink:0}
+.langbtn:hover{background:var(--ink);color:var(--paper)}
+@media(max-width:760px){.nav-links{display:none}}
+
+/* HERO */
+header{padding:88px 0 64px;position:relative}
+.eyebrow{font-family:var(--display);text-transform:uppercase;letter-spacing:.34em;font-size:12.5px;color:var(--oxblood);font-weight:600;margin-bottom:26px}
+.hero-name{font-family:var(--display);font-weight:340;font-size:clamp(3.1rem,9vw,6.6rem);line-height:.96;letter-spacing:-.02em;margin-bottom:18px}
+.hero-name em{font-style:italic;font-weight:340;color:var(--oxblood)}
+.hero-role{font-family:var(--display);font-size:clamp(1.15rem,2.6vw,1.55rem);font-weight:400;font-style:italic;color:var(--ink-soft);max-width:36ch;line-height:1.35;margin-bottom:34px}
+.hero-lede{max-width:62ch;color:var(--ink-soft);font-size:1.06rem;margin-bottom:40px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{font-family:var(--display);font-size:14px;letter-spacing:.05em;text-transform:uppercase;font-weight:500;text-decoration:none;padding:13px 24px;border:1.5px solid var(--ink);color:var(--ink);transition:all .25s ease;display:inline-flex;align-items:center;gap:9px;cursor:pointer;background:transparent}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn-primary{background:var(--oxblood);border-color:var(--oxblood);color:var(--paper)}
+.btn-primary:hover{background:var(--oxblood-deep);border-color:var(--oxblood-deep);color:var(--paper)}
+.ghost-psi{position:absolute;right:-2%;top:-2%;font-family:var(--display);font-weight:300;font-size:38rem;line-height:1;color:var(--oxblood);opacity:.05;pointer-events:none;user-select:none;z-index:0}
+@media(max-width:900px){.ghost-psi{font-size:24rem;right:-8%;top:6%}}
+
+/* METRICS */
+.metrics{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);display:grid;grid-template-columns:repeat(4,1fr)}
+.metric{padding:34px 26px;border-right:1px solid var(--rule)}
+.metric:last-child{border-right:none}
+.metric .num{font-family:var(--display);font-size:clamp(2.2rem,5vw,3.3rem);font-weight:340;line-height:1;color:var(--oxblood);letter-spacing:-.02em}
+.metric .lab{font-size:14px;color:var(--ink-faint);margin-top:10px;line-height:1.35}
+@media(max-width:760px){.metrics{grid-template-columns:repeat(2,1fr)}.metric:nth-child(2){border-right:none}.metric:nth-child(1),.metric:nth-child(2){border-bottom:1px solid var(--rule)}}
+
+/* SECTION */
+section{padding:84px 0}
+.sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:46px}
+.sec-num{font-family:var(--display);font-size:14px;color:var(--oxblood);font-weight:600;letter-spacing:.1em}
+.sec-title{font-family:var(--display);font-weight:360;font-size:clamp(1.9rem,4.5vw,2.9rem);letter-spacing:-.015em;line-height:1}
+.sec-rule{flex:1;height:1px;background:var(--rule);transform:translateY(-6px)}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:60px}
+.about-body p{margin-bottom:22px;font-size:1.08rem;line-height:1.72}
+.about-body p:first-child{font-size:1.28rem;line-height:1.55;color:var(--ink)}
+.about-body strong{font-weight:520;color:var(--oxblood)}
+.about-side{border-left:1px solid var(--rule);padding-left:32px}
+.about-side h4{font-family:var(--display);font-size:12px;text-transform:uppercase;letter-spacing:.2em;color:var(--ink-faint);margin-bottom:14px;font-weight:600}
+.about-side ul{list-style:none;margin-bottom:30px}
+.about-side li{font-size:.98rem;padding:7px 0;border-bottom:1px dotted var(--rule);color:var(--ink-soft)}
+.about-side li span{display:block;font-size:.82rem;color:var(--ink-faint);font-style:italic}
+@media(max-width:820px){.about-grid{grid-template-columns:1fr;gap:40px}.about-side{border-left:none;border-top:1px solid var(--rule);padding-left:0;padding-top:30px}}
+
+/* FOCUS */
+#focus{background:var(--paper-2)}
+.focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.focus-card{background:var(--paper-2);padding:34px 30px;transition:background .3s}
+.focus-card:hover{background:var(--paper)}
+.focus-card .fc-psi{font-family:var(--display);color:var(--oxblood);font-size:1.5rem;opacity:.55}
+.focus-card h3{font-family:var(--display);font-weight:400;font-size:1.35rem;margin:14px 0 10px;letter-spacing:-.01em}
+.focus-card p{font-size:.99rem;color:var(--ink-soft);line-height:1.6}
+@media(max-width:880px){.focus-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.focus-grid{grid-template-columns:1fr}}
+
+/* PUBLICATIONS */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;align-items:center}
+.filter{font-family:var(--display);font-size:13px;letter-spacing:.04em;text-transform:uppercase;font-weight:500;background:transparent;border:1.5px solid var(--rule);color:var(--ink-soft);padding:9px 16px;cursor:pointer;transition:all .22s ease}
+.filter:hover{border-color:var(--ink-soft);color:var(--ink)}
+.filter.active{background:var(--oxblood);border-color:var(--oxblood);color:var(--paper)}
+.modebtn{font-family:var(--display);font-size:13px;letter-spacing:.04em;text-transform:uppercase;font-weight:600;background:var(--ink);color:var(--paper);border:1.5px solid var(--ink);padding:9px 18px;cursor:pointer;transition:all .22s ease;margin-left:auto}
+.modebtn:hover{background:transparent;color:var(--ink)}
+@media(max-width:760px){.modebtn{margin-left:0;width:100%;margin-top:6px}}
+#publist{margin-top:30px}
+.year-group.hidden{display:none}
+.year-head{display:flex;align-items:center;gap:18px;margin:38px 0 4px}
+.year-group:first-child .year-head{margin-top:0}
+.yh-num{font-family:var(--display);font-size:1.7rem;color:var(--oxblood);font-weight:340;letter-spacing:-.01em}
+.yh-line{flex:1;height:1px;background:var(--rule)}
+.pub{display:grid;grid-template-columns:1fr auto;gap:26px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--rule)}
+.pub.hidden{display:none}
+.pt{font-size:1.1rem;line-height:1.4;color:var(--ink);font-weight:430;margin-bottom:8px;letter-spacing:-.005em;display:block;text-decoration:none}
+a.pt{transition:color .2s}
+a.pt:hover{color:var(--oxblood);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.src{font-style:italic;color:var(--ink-soft);font-size:.95rem}
+.src .auth{font-style:normal;color:var(--ink-faint);font-size:.88rem;display:block;margin-top:3px}
+.tags{display:flex;flex-direction:column;gap:6px;align-items:flex-end;text-align:right}
+.tag{font-family:var(--display);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;white-space:nowrap}
+.qmark{font-family:var(--display);font-size:11px;font-weight:700;color:var(--gold);border:1px solid var(--gold);padding:2px 7px;letter-spacing:.05em}
+@media(max-width:760px){.pub{grid-template-columns:1fr;gap:8px}.tags{flex-direction:row;align-items:center;justify-content:flex-start;text-align:left;margin-top:2px}}
+.pub-note{margin-top:34px;font-size:.98rem;color:var(--ink-faint);font-style:italic;max-width:75ch}
+.pub-note a{color:var(--oxblood)}
+
+/* EDUCATION */
+#education{background:var(--paper-2)}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.edu-block h4{font-family:var(--display);font-size:12px;text-transform:uppercase;letter-spacing:.2em;color:var(--oxblood);font-weight:600;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.edu-item{margin-bottom:24px}
+.edu-item .deg{font-family:var(--display);font-size:1.15rem;font-weight:430;line-height:1.3}
+.edu-item .inst{color:var(--ink-soft);font-size:.98rem}
+.edu-item .yr{color:var(--ink-faint);font-size:.85rem;font-style:italic}
+@media(max-width:760px){.edu-grid{grid-template-columns:1fr;gap:36px}}
+
+/* SERVICE */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.svc h4{font-family:var(--display);font-size:12px;text-transform:uppercase;letter-spacing:.2em;color:var(--oxblood);font-weight:600;margin-bottom:16px}
+.svc p,.svc li{font-size:.98rem;color:var(--ink-soft);line-height:1.55}
+.svc ul{list-style:none}
+.svc li{padding:5px 0;border-bottom:1px dotted var(--rule)}
+.big-stat{font-family:var(--display);font-size:2.6rem;color:var(--oxblood);font-weight:340;line-height:1;letter-spacing:-.02em}
+@media(max-width:820px){.svc-grid{grid-template-columns:1fr;gap:34px}}
+
+/* FOOTER */
+footer{background:var(--ink);color:var(--paper);padding:84px 0 48px;position:relative;z-index:2}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:50px;align-items:end}
+.foot-title{font-family:var(--display);font-weight:340;font-size:clamp(2rem,5vw,3.4rem);line-height:1.02;letter-spacing:-.02em}
+.foot-title em{font-style:italic;color:#c7a766}
+.foot-links{display:flex;flex-direction:column;gap:14px}
+.foot-links a{color:var(--paper);text-decoration:none;font-size:1.05rem;display:flex;align-items:center;gap:12px;opacity:.85;transition:opacity .2s,gap .2s}
+.foot-links a:hover{opacity:1;gap:18px}
+.foot-links a .fl{color:#c7a766;font-family:var(--display);font-size:13px;letter-spacing:.12em;text-transform:uppercase;width:86px;flex-shrink:0}
+.foot-bottom{margin-top:60px;padding-top:24px;border-top:1px solid rgba(244,240,230,.2);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.85rem;opacity:.6;font-family:var(--display);letter-spacing:.03em}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:36px}}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-mark"><span class="psi">Ψ</span> Miguel Landa-Blanco</div>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#focus" data-i18n="nav_research">Research</a>
+        <a href="#publications" data-i18n="nav_pubs">Publications</a>
+        <a href="#education" data-i18n="nav_edu">Education</a>
+        <a href="#service" data-i18n="nav_service">Service</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+      <button class="langbtn" id="langbtn" aria-label="Switch language">ES</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header>
+  <div class="ghost-psi" aria-hidden="true">Ψ</div>
+  <div class="wrap">
+    <div class="eyebrow reveal" data-i18n="hero_eyebrow">Research Psychologist · Tegucigalpa, Honduras</div>
+    <h1 class="hero-name reveal">Miguel<br><em>Landa-Blanco</em></h1>
+    <p class="hero-role reveal" data-i18n="hero_role">Quantitative researcher working at the intersection of mental health, interpersonal violence, and human flourishing in Latin America, with complementary qualitative work.</p>
+    <p class="hero-lede reveal" data-i18n="hero_lede">Ranked Honduras' leading researcher in psychology (Scopus) and social sciences (AD Scientific Index) as of 2025, and the first psychologist to receive UNAH's Professional Researcher Award. Full-time professor at the National Autonomous University of Honduras, with a Ph.D. in Education focused on educational research methodology; currently pursuing a Ph.D. in Psychology at the University of Granada.</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary" href="#publications" data-i18n="hero_btn1">View Publications</a>
+      <a class="btn" href="https://orcid.org/0000-0002-7865-7593" target="_blank" rel="noopener" data-i18n="hero_btn2">ORCID Profile ↗</a>
+      <a class="btn" href="mailto:mlandablanco@gmail.com" data-i18n="hero_btn3">Get in Touch</a>
+    </div>
+  </div>
+</header>
+
+<!-- METRICS -->
+<div class="wrap reveal">
+  <div class="metrics">
+    <div class="metric"><div class="num">17</div><div class="lab" data-i18n="m_h">h-index</div></div>
+    <div class="metric"><div class="num">25</div><div class="lab" data-i18n="m_i10">i10-index</div></div>
+    <div class="metric"><div class="num">1,000+</div><div class="lab" data-i18n="m_cit">Citations</div></div>
+    <div class="metric"><div class="num">34</div><div class="lab" data-i18n="m_q">Publications in Q1 &amp; Q2 journals</div></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">01</span>
+      <h2 class="sec-title" data-i18n="sec_about">About</h2>
+      <span class="sec-rule"></span>
+    </div>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p data-i18n="about_p1">I study how psychological, relational, and structural factors shape mental health and interpersonal violence in low- and middle-income contexts, with sustained empirical attention to the Honduran population.</p>
+        <p data-i18n="about_p2">My work spans <strong>intimate partner violence</strong>, adverse and benevolent childhood experiences, suicide risk, gender attitudes, and the personality correlates of well-being. Methodologically, it is primarily quantitative, relying on <strong>psychometric validation, regression and mediation modelling, latent class and factor analytic approaches</strong>, complemented by selected qualitative designs including interviews, focus groups, and thematic coding.</p>
+        <p data-i18n="about_p3">Beyond my own program of research, I coordinate research and ethics functions within UNAH's School of Psychological Sciences and contribute to large <strong>cross-cultural consortia</strong> spanning more than 100 countries, examining mate preferences, social norms, and global health attitudes.</p>
+        <p data-i18n="about_p4">I am also a practicing clinical psychologist trained in CBT and ACT, which keeps my research grounded in applied questions about help-seeking, stigma, and intervention.</p>
+      </div>
+      <aside class="about-side reveal">
+        <h4 data-i18n="about_appt">Current Appointments</h4>
+        <ul>
+          <li data-i18n="appt1">Full-time Professor, UNAH<span>National Autonomous University of Honduras · since 2014</span></li>
+          <li data-i18n="appt3">Coordinator, Research Ethics Committee<span>Faculty of Social Sciences, UNAH</span></li>
+          <li data-i18n="appt4">Research &amp; Extension Coordinator<span>MSc Clinical Psychology, UNAH</span></li>
+        </ul>
+        <h4 data-i18n="about_recog">Recognition</h4>
+        <ul>
+          <li data-i18n="recog1">#1 Researcher in Psychology, Honduras<span>Scopus · 2025</span></li>
+          <li data-i18n="recog2">UNAH Professional Researcher Award<span>First psychologist to receive it · 2024</span></li>
+          <li data-i18n="recog3">Top 10 Researcher at UNAH<span>2023 &amp; 2024</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- FOCUS -->
+<section id="focus">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">02</span>
+      <h2 class="sec-title" data-i18n="sec_focus">Research Focus</h2>
+      <span class="sec-rule"></span>
+    </div>
+    <div class="focus-grid reveal">
+      <div class="focus-card"><div class="fc-psi">Ψ</div><h3 data-i18n="fc1_t">Interpersonal &amp; Gender-Based Violence</h3><p data-i18n="fc1_d">Predictors of IPV perpetration and victimization, corporal punishment attitudes, violence desensitization, and barriers to help-seeking — including the under-studied case of male victims.</p></div>
+      <div class="focus-card"><div class="fc-psi">Ψ</div><h3 data-i18n="fc2_t">Mental Health &amp; Help-Seeking</h3><p data-i18n="fc2_d">Depression, anxiety, suicide risk, and the psychological burden of the COVID-19 pandemic, alongside attitudes toward professional psychological help in university and general populations.</p></div>
+      <div class="focus-card"><div class="fc-psi">Ψ</div><h3 data-i18n="fc3_t">Childhood Experiences</h3><p data-i18n="fc3_d">Adverse and benevolent childhood experiences as antecedents of adult flourishing, emotion regulation, risk behavior, and problematic technology use.</p></div>
+      <div class="focus-card"><div class="fc-psi">Ψ</div><h3 data-i18n="fc4_t">Personality &amp; Flourishing</h3><p data-i18n="fc4_d">Light and Dark Triad traits, narcissism, and positive psychology constructs as mediators of well-being, academic engagement, and digital behavior.</p></div>
+      <div class="focus-card"><div class="fc-psi">Ψ</div><h3 data-i18n="fc5_t">Psychometrics &amp; Measurement</h3><p data-i18n="fc5_d">Validation and cross-cultural adaptation of screening instruments — flourishing, depression, anxiety, somatization, and novel scales for violence desensitization.</p></div>
+      <div class="focus-card"><div class="fc-psi">Ψ</div><h3 data-i18n="fc6_t">Cross-Cultural Collaboration</h3><p data-i18n="fc6_d">Contributing Honduran data to global consortia on romantic love, mate preferences, social norms, and health attitudes across 90–175 countries.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">03</span>
+      <h2 class="sec-title" data-i18n="sec_pubs">Publications</h2>
+      <span class="sec-rule"></span>
+    </div>
+
+    <div class="filters reveal">
+      <button class="filter active" data-f="all" data-i18n="f_all">All</button>
+      <button class="filter" data-f="violence" data-i18n="f_violence">Violence &amp; Gender</button>
+      <button class="filter" data-f="mental" data-i18n="f_mental">Mental Health</button>
+      <button class="filter" data-f="positive" data-i18n="f_positive">Personality &amp; Flourishing</button>
+      <button class="filter" data-f="psychometrics" data-i18n="f_psy">Psychometrics</button>
+      <button class="filter" data-f="crosscultural" data-i18n="f_cc">Cross-Cultural</button>
+      <button class="filter" data-f="edusoc" data-i18n="f_edu">Education &amp; Society</button>
+      <button class="modebtn" id="modebtn">Show complete list (53)</button>
+    </div>
+
+    <div id="publist">
+
+      <!-- 2026 -->
+      <div class="year-group">
+        <div class="year-head"><span class="yh-num">2026</span><span class="yh-line"></span></div>
+        <article class="pub" data-cat="violence" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.1016/j.chiabu.2026.108002" target="_blank" rel="noopener">Patterns of Child Discipline and Associated Factors in Honduras: A Latent Class Approach</a><div class="src">Child Abuse &amp; Neglect<span class="auth">Cárcamo-Zepeda, Mejía-Sánchez, Landa-Blanco &amp; Valencia</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_violence">Violence &amp; Gender</span></div></article>
+        <article class="pub" data-cat="mental positive" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.1007/s44202-026-00652-4" target="_blank" rel="noopener">Adverse Childhood Experiences, Loneliness, and Emotion Regulation Strategies as Predictors of Problematic Pornography Use</a><div class="src">Discover Psychology<span class="auth">Hernández &amp; Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="edusoc"><div class="meta"><a class="pt" href="https://doi.org/10.3389/feduc.2025.1681836" target="_blank" rel="noopener">Artificial Intelligence in Education: Applications and Limitations for Teachers in Low- and Middle-Income Countries</a><div class="src">Frontiers in Education · 10<span class="auth">Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+      </div>
+
+      <!-- 2025 -->
+      <div class="year-group">
+        <div class="year-head"><span class="yh-num">2025</span><span class="yh-line"></span></div>
+        <article class="pub" data-cat="mental"><div class="meta"><a class="pt" href="https://www.lab-co.org/wp-content/uploads/2025/05/Libro-de-ponencias-congreso-IVG_ebook-final.pdf" target="_blank" rel="noopener">Bienestar psicológico de las personas transgénero en el contexto hondureño: un estudio de casos</a><div class="src">Congreso Internacional de Investigaciones sobre Violencia Basada en Género<span class="auth">Agüero-Flores &amp; Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="crosscultural" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.1038/s44271-025-00324-4" target="_blank" rel="noopener">Everyday Norms Have Become More Permissive Over Time and Vary Across Cultures</a><div class="src">Communications Psychology · 3(1), 145<span class="auth">Eriksson, Strimling, Vartanova … Landa-Blanco, et al.</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_cc">Cross-Cultural</span></div></article>
+        <article class="pub" data-cat="crosscultural" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.1038/s41597-025-05365-2" target="_blank" rel="noopener">Cross-Cultural Data on Romantic Love and Mate Preferences from 117,293 Participants Across 175 Countries</a><div class="src">Scientific Data · 12(1), 1103<span class="auth">Kowal, Sorokowski, Gjoneska … Landa-Blanco, et al.</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_cc">Cross-Cultural</span></div></article>
+        <article class="pub" data-cat="mental"><div class="meta"><a class="pt" href="https://doi.org/10.3389/fpubh.2025.1672949" target="_blank" rel="noopener">Anxiety, Depression, Eating Behaviors, and Irrational Food Beliefs as Predictors of Type 2 Diabetes Risk in Honduran Adults</a><div class="src">Frontiers in Public Health · 13<span class="auth">Maradiaga, Landa-Blanco &amp; Mejía-Sánchez</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="violence"><div class="meta"><a class="pt" href="https://doi.org/10.1177/15404153251365598" target="_blank" rel="noopener">Violence Against Women in Honduras: A Comparative Analysis Between Women With and Without Disabilities</a><div class="src">Hispanic Health Care International<span class="auth">Mejía-Sánchez, Cárcamo-Zepeda &amp; Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_violence">Violence &amp; Gender</span></div></article>
+        <article class="pub" data-cat="positive"><div class="meta"><a class="pt" href="https://doi.org/10.3389/fpubh.2025.1485264" target="_blank" rel="noopener">Personality Traits and Digital Challenges in Honduran Adults: The Dark and Light Triads' Influence on Internet Gaming Disorder and Technology-Related Conflicts</a><div class="src">Frontiers in Public Health · 13<span class="auth">Mejía-Suazo, Landa-Blanco, Mejía-Suazo &amp; Martínez-Martínez</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_positive">Personality &amp; Flourishing</span></div></article>
+        <article class="pub" data-cat="positive" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.3390/bs15040456" target="_blank" rel="noopener">Exploring the Relationship Between Flourishing and the Light Triad of Personality in Honduran Adults</a><div class="src">Behavioral Sciences · 15(4), 456<span class="auth">Landa-Blanco, Espinoza-Rivera, Caballero-Juárez &amp; Mejía-Sánchez</span></div></div><div class="tags"><span class="tag" data-i18n="t_positive">Personality &amp; Flourishing</span></div></article>
+        <article class="pub" data-cat="positive"><div class="meta"><a class="pt" href="https://doi.org/10.3389/fped.2025.1578485" target="_blank" rel="noopener">Shifting the Focus: Measuring Positive Childhood Experiences and Flourishing for Holistic Mental Health in Low- and Middle-Income Countries</a><div class="src">Frontiers in Pediatrics · 13, 1578485<span class="auth">Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_positive">Personality &amp; Flourishing</span></div></article>
+        <article class="pub" data-cat="mental"><div class="meta"><a class="pt" href="https://diciht.unah.edu.hn/dmsdocument/20197-periodico-universidad-investigadora-14-pdf" target="_blank" rel="noopener">El suicidio en Honduras: conceptualización, factores asociados, evidencia nacional y estrategias de prevención</a><div class="src">Universidad Investigadora · 8(14)<span class="auth">Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="edusoc violence"><div class="meta"><a class="pt" href="https://doi.org/10.3389/fpsyg.2025.1689812" target="_blank" rel="noopener">Schools Caught in Conflict: Lessons from Honduras on Violence, Vulnerability, and Educational Barriers</a><div class="src">Frontiers in Psychology<span class="auth">Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+        <article class="pub" data-cat="violence mental" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.3389/fpubh.2025.1565284" target="_blank" rel="noopener">Breaking the Cycle: Addressing Barriers to Help-Seeking and Mental Health Impacts for Male Victims of Intimate Partner Violence in LMICs</a><div class="src">Frontiers in Public Health · 13<span class="auth">Landa-Blanco &amp; Mejía-Sánchez</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_violence">Violence &amp; Gender</span></div></article>
+        <article class="pub" data-cat="psychometrics mental" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.3390/bs15111546" target="_blank" rel="noopener">Psychometric Assessment of Screening Measures for Depression, Anxiety, Somatization, and Life Satisfaction in Honduran University Students</a><div class="src">Behavioral Sciences · 15(11)<span class="auth">Landa-Blanco, Mejía-Sánchez, Echenique, et al.</span></div></div><div class="tags"><span class="tag" data-i18n="t_psy">Psychometrics</span></div></article>
+        <article class="pub" data-cat="violence positive" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.1177/08862605251336785" target="_blank" rel="noopener">Understanding Adult Attitudes Toward Corporal Punishment in Honduras: The Role of Sex, Gender Roles, Education, Childhood Experiences, and Psychopathy</a><div class="src">Journal of Interpersonal Violence<span class="auth">Landa-Blanco, Echenique, Cruz-Quintana, Fernández-Alcántara, Pérez-Marfil &amp; Navarro</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_violence">Violence &amp; Gender</span></div></article>
+        <article class="pub" data-cat="crosscultural"><div class="meta"><a class="pt" href="https://doi.org/10.1016/j.puhe.2025.02.030" target="_blank" rel="noopener">A Preliminary Study on the Role of Personal History of Infectious and Parasitic Diseases on Self-Reported Health Across Countries</a><div class="src">Public Health · 242, 220–227<span class="auth">Pfuhl, Prazeres, Kowal … Landa-Blanco, et al.</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_cc">Cross-Cultural</span></div></article>
+        <article class="pub" data-cat="mental"><div class="meta"><a class="pt" href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1565943/full" target="_blank" rel="noopener">Seeking Support or Avoiding It? A Qualitative Study of Professional Psychological Help Perceptions Among University Students in Honduras</a><div class="src">Frontiers in Psychology · 16<span class="auth">Rivera, Barahona-Aguilar, Cuevas … Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+      </div>
+
+      <!-- 2024 -->
+      <div class="year-group">
+        <div class="year-head"><span class="yh-num">2024</span><span class="yh-line"></span></div>
+        <article class="pub" data-cat="edusoc"><div class="meta"><a class="pt" href="https://doi.org/10.14201/scero.31566" target="_blank" rel="noopener">Educación a distancia durante la pandemia COVID-19: Experiencias de madres de estudiantes con Trastorno del Espectro Autista</a><div class="src">Siglo Cero · 55(2), 67–86<span class="auth">Carrasco-Mella, Paz-Maldonado, Cisternas-García &amp; Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+        <article class="pub" data-cat="crosscultural"><div class="meta"><a class="pt" href="https://doi.org/10.1007/s12110-024-09482-6" target="_blank" rel="noopener">Love as a Commitment Device</a><div class="src">Human Nature · 35(4), 430–450<span class="auth">Kowal, Bode, Koszałkowska … Landa-Blanco, et al.</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_cc">Cross-Cultural</span></div></article>
+        <article class="pub" data-cat="positive mental" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.3389/fpsyg.2024.1320169" target="_blank" rel="noopener">The Impact of Benevolent Childhood Experiences on Adult Flourishing: The Mediating Role of Light Triad Traits</a><div class="src">Frontiers in Psychology · 15<span class="auth">Landa-Blanco, Herrera, Espinoza, Girón, Moncada &amp; Cortés-Ramos</span></div></div><div class="tags"><span class="tag" data-i18n="t_positive">Personality &amp; Flourishing</span></div></article>
+        <article class="pub" data-cat="mental" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.1016/j.heliyon.2024.e24384" target="_blank" rel="noopener">Social Media Addiction Relationship with Academic Engagement in University Students: The Mediator Role of Self-Esteem, Depression, and Anxiety</a><div class="src">Heliyon<span class="auth">Landa-Blanco, Reyes García, Landa-Blanco, Cortés-Ramos &amp; Paz-Maldonado</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="mental" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.3389/fpsyt.2024.1352889" target="_blank" rel="noopener">Exploring Suicide Ideation in University Students: Sleep Quality, Social Media, Self-Esteem, and Barriers to Seeking Psychological Help</a><div class="src">Frontiers in Psychiatry · 15<span class="auth">Landa-Blanco, Romero, Caballero, Gálvez-Pineda, Fúnes-Henríquez &amp; Romero</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="mental"><div class="meta"><a class="pt" href="https://doi.org/10.3389/fpsyt.2024.1352824" target="_blank" rel="noopener">The Impact of Adverse Childhood Experiences on Mental Health, Sexual Risk Behaviors, and Alcohol Consumption in Adulthood</a><div class="src">Frontiers in Psychiatry · 15<span class="auth">Landa-Blanco, Vásquez, Portillo, Sproviero &amp; Echenique</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="crosscultural" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.1007/s10508-023-02724-1" target="_blank" rel="noopener">Exploring Attitudes Toward "Sugar Relationships" Across 87 Countries: A Global Perspective on Exchanges of Resources for Sex and Companionship</a><div class="src">Archives of Sexual Behavior · 53(2), 811–837<span class="auth">Meskó, Kowal, Láng … Landa-Blanco, et al.</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_cc">Cross-Cultural</span></div></article>
+      </div>
+
+      <!-- 2023 -->
+      <div class="year-group">
+        <div class="year-head"><span class="yh-num">2023</span><span class="yh-line"></span></div>
+        <article class="pub" data-cat="mental crosscultural" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.1037/hea0001268" target="_blank" rel="noopener">Mediation Analysis of Conspiratorial Thinking and Anti-Expert Sentiments on Vaccine Willingness</a><div class="src">Health Psychology · 42(4), 235–246<span class="auth">Blackburn, Han, Gelpí … COVIDiSTRESS II Consortium</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="edusoc"><div class="meta"><a class="pt" href="https://dialnet.unirioja.es/servlet/articulo?codigo=9012411" target="_blank" rel="noopener">Pensamiento computacional en la adquisición de competencias científicas en Educación Primaria</a><div class="src">In: Investigación en la educación formal (Dykinson), 181–190<span class="auth">Cortés-Ramos, Caparrós-Rubio, Torrecilla García &amp; Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+        <article class="pub" data-cat="edusoc"><div class="meta"><a class="pt" href="https://dialnet.unirioja.es/servlet/articulo?codigo=9012409" target="_blank" rel="noopener">Las competencias científicas en la formación inicial en Educación Superior</a><div class="src">In: Investigación en la educación formal (Dykinson), 201–209<span class="auth">Cortés-Ramos, Landa-Blanco &amp; Torrecilla García</span></div></div><div class="tags"><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+        <article class="pub" data-cat="psychometrics positive" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.3389/fpsyg.2023.1223269" target="_blank" rel="noopener">Psychometric Properties of the Spanish Version of the Flourishing Scale in the Honduran Population</a><div class="src">Frontiers in Psychology · 14<span class="auth">Landa-Blanco, Cortés-Ramos, Vasquéz, Reyes &amp; Echenique</span></div></div><div class="tags"><span class="tag" data-i18n="t_psy">Psychometrics</span></div></article>
+      </div>
+
+      <!-- 2022 -->
+      <div class="year-group">
+        <div class="year-head"><span class="yh-num">2022</span><span class="yh-line"></span></div>
+        <article class="pub" data-cat="crosscultural"><div class="meta"><a class="pt" href="https://doi.org/10.1038/s41597-022-01383-6" target="_blank" rel="noopener">COVIDiSTRESS Diverse Dataset on Psychological and Behavioural Outcomes One Year Into the COVID-19 Pandemic</a><div class="src">Scientific Data · 9<span class="auth">Blackburn, Vestergren &amp; COVIDiSTRESS II Consortium</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_cc">Cross-Cultural</span></div></article>
+        <article class="pub" data-cat="mental"><div class="meta"><a class="pt" href="https://doi.org/10.5377/pdac.v18i1.15040" target="_blank" rel="noopener">Los efectos de la discriminación en la salud mental de la población LGTB+ de Honduras</a><div class="src">Población y Desarrollo · 18(1), 106–122<span class="auth">Chinchilla, Landa-Blanco, Agüero &amp; Reyes</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="crosscultural" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.1016/j.evolhumbehav.2022.08.003" target="_blank" rel="noopener">Predictors of Enhancing Human Physical Attractiveness: Data from 93 Countries</a><div class="src">Evolution and Human Behavior<span class="auth">Kowal, Sorokowski, Pisanski … Landa-Blanco, et al.</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_cc">Cross-Cultural</span></div></article>
+        <article class="pub" data-cat="edusoc"><div class="meta"><a class="pt" href="https://octaedro.com/libro/investigacion-educativa-sobre-recursos-tecnologicos-y-metodos-activos/" target="_blank" rel="noopener">Importancia del razonamiento científico en Educación Superior</a><div class="src">In: Investigación educativa sobre recursos tecnológicos y métodos activos (Octaedro), 151–160<span class="auth">Landa-Blanco, Cortés-Ramos &amp; Castilla-Mesa</span></div></div><div class="tags"><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+        <article class="pub" data-cat="mental"><div class="meta"><a class="pt" href="https://doi.org/10.12804/revistas.urosario.edu.co/apl/a.8537" target="_blank" rel="noopener">Factors Related to Suicidal Risk in University Students of Honduras</a><div class="src">Avances en Psicología Latinoamericana · 40(1)<span class="auth">Landa-Blanco, Urtecho, Mercado &amp; Aguilar</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="edusoc"><div class="meta"><a class="pt" href="https://rus.ucf.edu.cu/index.php/rus/article/view/3389" target="_blank" rel="noopener">Predictors of Impulsive Buying: Attitudes Towards Money, Debt, Irrational Happiness, Materialism, and Sustainable Consumption in Honduras</a><div class="src">Revista Universidad y Sociedad · 14(6), 404–413<span class="auth">Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+      </div>
+
+      <!-- 2021 -->
+      <div class="year-group">
+        <div class="year-head"><span class="yh-num">2021</span><span class="yh-line"></span></div>
+        <article class="pub" data-cat="mental psychometrics"><div class="meta"><a class="pt" href="https://doi.org/10.3390/ijerph182211807" target="_blank" rel="noopener">Universal Screening in Positive School Mental Health Using the ASEBA Methodology for Teachers: A Pilot Epidemiological Study</a><div class="src">Int. J. of Environmental Research and Public Health · 18(22)<span class="auth">Cortés-Ramos &amp; Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="edusoc"><div class="meta"><a class="pt" href="https://doi.org/10.3390/su131810485" target="_blank" rel="noopener">Activism and Social Media: Youth Participation and Communication</a><div class="src">Sustainability · 13(18)<span class="auth">Cortés-Ramos, Torrecilla García, Landa-Blanco, Poleo Gutiérrez &amp; Castilla-Mesa</span></div></div><div class="tags"><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+        <article class="pub" data-cat="mental"><div class="meta"><span class="pt">Bienestar subjetivo como desarrollo humano: cultura de la felicidad objetiva</span><div class="src">In: Economía de la Vida Cultural (UNAH), 147–174<span class="auth">Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="edusoc"><div class="meta"><a class="pt" href="https://doi.org/10.1016/j.heliyon.2021.e08504" target="_blank" rel="noopener">Psychology Students' Attitudes Towards Research: The Role of Critical Thinking, Epistemic Orientation, and Satisfaction with Research Courses</a><div class="src">Heliyon · 7(12), e08504<span class="auth">Landa-Blanco &amp; Cortés-Ramos</span></div></div><div class="tags"><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+        <article class="pub" data-cat="mental"><div class="meta"><a class="pt" href="https://doi.org/10.3389/fpsyg.2021.549644" target="_blank" rel="noopener">Coronavirus Awareness and Mental Health: Clinical Symptoms and Attitudes Toward Seeking Professional Psychological Help</a><div class="src">Frontiers in Psychology · 12<span class="auth">Landa-Blanco, Mejía, Landa-Blanco &amp; Martínez-Martínez</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="mental" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.1016/j.socscimed.2021.113933" target="_blank" rel="noopener">Coronavirus Awareness, Confinement Stress, and Mental Health: Evidence from Honduras, Chile, Costa Rica, Mexico and Spain</a><div class="src">Social Science &amp; Medicine · 277, 113933<span class="auth">Landa-Blanco, Mejía, Landa-Blanco, et al.</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="mental"><div class="meta"><a class="pt" href="https://doi.org/10.21134/pssa.v9i1.703" target="_blank" rel="noopener">Depresión y ansiedad en pacientes hospitalizados en el servicio de Medicina Interna del Hospital Escuela Universitario</a><div class="src">Revista de Psicología de la Salud · 9(1)<span class="auth">Martínez-Martínez, Mejía-Suazo &amp; Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+        <article class="pub" data-cat="positive mental"><div class="meta"><a class="pt" href="https://doi.org/10.1177/15404153211042371" target="_blank" rel="noopener">Moral Injury and Light Triad Traits: Anxiety and Depression in Health-Care Personnel During the COVID-19 Pandemic in Honduras</a><div class="src">Hispanic Health Care International<span class="auth">Rodríguez, Agüero-Flores, Landa-Blanco, Agurcia &amp; Santos-Midence</span></div></div><div class="tags"><span class="tag" data-i18n="t_positive">Personality &amp; Flourishing</span></div></article>
+        <article class="pub" data-cat="edusoc"><div class="meta"><a class="pt" href="https://doi.org/10.37230/CyTET.2021.209.10" target="_blank" rel="noopener">Libertad, seguridad y exclusión: la experiencia de los barrios cerrados en Honduras</a><div class="src">Ciudad y Territorio Estudios Territoriales · 53(209)<span class="auth">Urtecho-Osorto, Landa-Blanco, Vásquez-González &amp; Vásquez-González</span></div></div><div class="tags"><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+      </div>
+
+      <!-- 2020 -->
+      <div class="year-group">
+        <div class="year-head"><span class="yh-num">2020</span><span class="yh-line"></span></div>
+        <article class="pub" data-cat="violence"><div class="meta"><a class="pt" href="http://www.scielo.org.co/scielo.php?script=sci_arttext&amp;pid=S2422-42002020000200085" target="_blank" rel="noopener">Implicaciones teóricas y prácticas de la adopción del Modelo de Servicio de Policía Comunitaria en Honduras</a><div class="src">Revista Logos Ciencia &amp; Tecnología · 12, 85–96<span class="auth">Abate-Flores, Urtecho-Osorto, Landa-Blanco, Ávila Flores &amp; Reyes Flores</span></div></div><div class="tags"><span class="tag" data-i18n="t_violence">Violence &amp; Gender</span></div></article>
+        <article class="pub" data-cat="edusoc" data-selected="1"><div class="meta"><a class="pt" href="https://doi.org/10.1016/j.trf.2020.04.016" target="_blank" rel="noopener">Factors Related to the Use of Pedestrian Bridges in University Students of Honduras</a><div class="src">Transportation Research Part F: Traffic Psychology and Behaviour · 71, 220–228<span class="auth">Landa-Blanco &amp; Ávila</span></div></div><div class="tags"><span class="qmark">Q1</span><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+        <article class="pub" data-cat="violence"><div class="meta"><a class="pt" href="https://doi.org/10.1136/injuryprev-2019-043536" target="_blank" rel="noopener">Violence in Honduras from 2008 to 2018</a><div class="src">Injury Prevention · 26(2)<span class="auth">Landa-Blanco, Cheon, Reyes Flores, Spohn &amp; Katz</span></div></div><div class="tags"><span class="tag" data-i18n="t_violence">Violence &amp; Gender</span></div></article>
+        <article class="pub" data-cat="edusoc"><div class="meta"><span class="pt">Academic Integrity: Attitudes and Practices of Students of a Public University in Honduras</span><div class="src">Academia · 20–21, 202–217<span class="auth">Landa-Blanco, Santos-Midence, Landa-Blanco &amp; Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+        <article class="pub" data-cat="mental"><div class="meta"><a class="pt" href="https://doi.org/10.30849/ripijp.v54i2.1333" target="_blank" rel="noopener">Salud mental, confinamiento y preocupación por el coronavirus: un estudio cualitativo</a><div class="src">Revista Interamericana de Psicología · 54(2), e1333<span class="auth">Vásquez, Urtecho-Osorto, Agüero-Flores … Landa-Blanco &amp; Echenique</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+      </div>
+
+      <!-- 2019 -->
+      <div class="year-group">
+        <div class="year-head"><span class="yh-num">2019</span><span class="yh-line"></span></div>
+        <article class="pub" data-cat="violence"><div class="meta"><span class="pt">Estilos de Resolución de Conflictos: Estudiantes del Instituto Técnico Policial de Honduras</span><div class="src">Academia de Ciencias Policiales · 1(1), 49–58<span class="auth">Landa-Blanco, Reyes-Flores &amp; Abate-Flores</span></div></div><div class="tags"><span class="tag" data-i18n="t_violence">Violence &amp; Gender</span></div></article>
+      </div>
+
+      <!-- 2017 -->
+      <div class="year-group">
+        <div class="year-head"><span class="yh-num">2017</span><span class="yh-line"></span></div>
+        <article class="pub" data-cat="mental"><div class="meta"><a class="pt" href="https://dx.doi.org/10.5377/pdac.v13i0.5626" target="_blank" rel="noopener">Bienestar subjetivo y su relación con el ingreso económico absoluto, el bienestar objetivo y la condición laboral en habitantes de Tatumbla</a><div class="src">Población y Desarrollo · 13, 23–29<span class="auth">Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+      </div>
+
+      <!-- 2016 -->
+      <div class="year-group">
+        <div class="year-head"><span class="yh-num">2016</span><span class="yh-line"></span></div>
+        <article class="pub" data-cat="edusoc"><div class="meta"><a class="pt" href="https://doi.org/10.5377/rct.v0i17.2681" target="_blank" rel="noopener">Actitud hacia la estadística por parte de los estudiantes de Medición Psicológica de la UNAH</a><div class="src">Revista Ciencia y Tecnología · 17, 68–78<span class="auth">Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_edusoc">Education &amp; Society</span></div></article>
+        <article class="pub" data-cat="mental"><div class="meta"><a class="pt" href="https://doi.org/10.5377/eya.v7i2.4301" target="_blank" rel="noopener">Significados y dimensiones del bienestar subjetivo en mujeres que habitan en la Aldea La Calera, Honduras</a><div class="src">Economía y Administración (E&amp;A) · 7(2)<span class="auth">Landa-Blanco &amp; Landa-Blanco</span></div></div><div class="tags"><span class="tag" data-i18n="t_mental">Mental Health</span></div></article>
+      </div>
+
+    </div>
+
+    <p class="pub-note reveal" data-i18n="pub_note">Currently showing a curated selection; use the toggle above to view all 53 peer-reviewed publications. The complete, continuously updated record is available via <a href="https://orcid.org/0000-0002-7865-7593" target="_blank" rel="noopener">ORCID 0000-0002-7865-7593</a>. Several manuscripts on IPV perpetration, violence desensitization, and neuromyth endorsement are currently under review.</p>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">04</span>
+      <h2 class="sec-title" data-i18n="sec_edu">Education</h2>
+      <span class="sec-rule"></span>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-block reveal">
+        <h4 data-i18n="edu_h1">Doctoral &amp; Doctoral Training</h4>
+        <div class="edu-item" data-i18n="edu_i1"><div class="deg">Ph.D. in Psychology</div><div class="inst">University of Granada, Spain</div><div class="yr">2024 – present · Thesis: Psychological correlates of intimate partner violence in the Honduran context</div></div>
+        <div class="edu-item" data-i18n="edu_i2"><div class="deg">Ph.D. in Education — Methodology of Educational Research</div><div class="inst">Universidad Internacional Iberoamericana (UNIB), Puerto Rico</div><div class="yr">2017 – 2022 · Thesis: Determinants of university students' attitudes toward research (quantitative and qualitative)</div></div>
+      </div>
+      <div class="edu-block reveal">
+        <h4 data-i18n="edu_h2">Master's &amp; Undergraduate</h4>
+        <div class="edu-item" data-i18n="edu_i3"><div class="deg">M.Sc. in Social Communication of Science</div><div class="inst">Universidad Internacional de Valencia (VIU), Spain · 2021–2022</div></div>
+        <div class="edu-item" data-i18n="edu_i4"><div class="deg">M.Sc. in Social and Economic Research — <em>Summa Cum Laude</em></div><div class="inst">National Autonomous University of Honduras (UNAH) · 2014–2016</div></div>
+        <div class="edu-item" data-i18n="edu_i5"><div class="deg">M.Sc. in Mindfulness &amp; Emotional Management · M.Sc. in Team Management</div><div class="inst">ENEB &amp; Universidad Internacional Isabel I de Castilla, Spain · 2022–2023</div></div>
+        <div class="edu-item" data-i18n="edu_i6"><div class="deg">B.A. in Psychology — <em>Cum Laude</em></div><div class="inst">National Autonomous University of Honduras (UNAH) · 2008–2013</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE -->
+<section id="service">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">05</span>
+      <h2 class="sec-title" data-i18n="sec_service">Academic Service &amp; Teaching</h2>
+      <span class="sec-rule"></span>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal">
+        <h4 data-i18n="svc_h1">Peer Review</h4>
+        <div class="big-stat">30+</div>
+        <p style="margin:10px 0 16px" data-i18n="svc_p1">journals &amp; agencies served, including:</p>
+        <ul>
+          <li>Personality and Individual Differences</li>
+          <li>Child Abuse &amp; Neglect</li>
+          <li>Death Studies</li>
+          <li>Journal of Psychiatric Research</li>
+          <li>PLOS ONE · BMC Psychology</li>
+          <li>Violence and Victims</li>
+          <li>APA 2026 Session Proposals</li>
+        </ul>
+      </div>
+      <div class="svc reveal">
+        <h4 data-i18n="svc_h2">Thesis Supervision</h4>
+        <p style="margin-bottom:16px" data-i18n="svc_p2">Graduate thesis advising across seven master's programs at UNAH and UNITEC:</p>
+        <ul data-i18n="svc_l2">
+          <li>Clinical Psychology (UNAH &amp; UNITEC)</li>
+          <li>Psychometry and Education</li>
+          <li>Work and Organizational Psychology</li>
+          <li>Social and Economic Research</li>
+          <li>Public Health</li>
+          <li>Development and International Cooperation</li>
+        </ul>
+      </div>
+      <div class="svc reveal">
+        <h4 data-i18n="svc_h3">Teaching</h4>
+        <p style="margin-bottom:16px" data-i18n="svc_p3">Undergraduate and postgraduate instruction in:</p>
+        <ul data-i18n="svc_l3">
+          <li>Research Methods in Psychology (I–IV)</li>
+          <li>Qualitative Methods</li>
+          <li>Applied &amp; Quantitative Data Analysis</li>
+          <li>Statistics Applied to Clinical Psychology</li>
+          <li>Psychological Evaluation</li>
+          <li>Epistemology &amp; Theoretical Models</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="reveal">
+        <h2 class="foot-title" data-i18n="foot_title">Open to collaboration on <em>mental health, violence, cross-cultural differences, and measurement</em> research.</h2>
+      </div>
+      <div class="foot-links reveal">
+        <a href="mailto:mlandablanco@gmail.com"><span class="fl" data-i18n="fl_email">Email</span> mlandablanco@gmail.com</a>
+        <a href="https://orcid.org/0000-0002-7865-7593" target="_blank" rel="noopener"><span class="fl">ORCID</span> 0000-0002-7865-7593 ↗</a>
+        <a href="#"><span class="fl" data-i18n="fl_loc">Location</span> Tegucigalpa, Honduras</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot_b1">Ψ Miguel Landa-Blanco · Curriculum Vitae 2026</span>
+      <span data-i18n="foot_b2">National Autonomous University of Honduras</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const I18N = {
+  en: {
+    doctitle:"Miguel Landa-Blanco — Research Psychologist",
+    nav_about:"About",nav_research:"Research",nav_pubs:"Publications",nav_edu:"Education",nav_service:"Service",nav_contact:"Contact",
+    hero_eyebrow:"Research Psychologist · Tegucigalpa, Honduras",
+    hero_role:"Quantitative researcher working at the intersection of mental health, interpersonal violence, and human flourishing in Latin America, with complementary qualitative work.",
+    hero_lede:"Ranked Honduras' leading researcher in psychology (Scopus) and social sciences (AD Scientific Index) as of 2025, and the first psychologist to receive UNAH's Professional Researcher Award. Full-time professor at the National Autonomous University of Honduras, with a Ph.D. in Education focused on educational research methodology; currently pursuing a Ph.D. in Psychology at the University of Granada.",
+    hero_btn1:"View Publications",hero_btn2:"ORCID Profile ↗",hero_btn3:"Get in Touch",
+    m_h:"h-index",m_i10:"i10-index",m_cit:"Citations",m_q:"Publications in Q1 &amp; Q2 journals",
+    sec_about:"About",sec_focus:"Research Focus",sec_pubs:"Publications",sec_edu:"Education",sec_service:"Academic Service &amp; Teaching",
+    about_p1:"I study how psychological, relational, and structural factors shape mental health and interpersonal violence in low- and middle-income contexts, with sustained empirical attention to the Honduran population.",
+    about_p2:"My work spans <strong>intimate partner violence</strong>, adverse and benevolent childhood experiences, suicide risk, gender attitudes, and the personality correlates of well-being. Methodologically, it is primarily quantitative, relying on <strong>psychometric validation, regression and mediation modelling, latent class and factor analytic approaches</strong>, complemented by selected qualitative designs including interviews, focus groups, and thematic coding.",
+    about_p3:"Beyond my own program of research, I coordinate research and ethics functions within UNAH's School of Psychological Sciences and contribute to large <strong>cross-cultural consortia</strong> spanning more than 100 countries, examining mate preferences, social norms, and global health attitudes.",
+    about_p4:"I am also a practicing clinical psychologist trained in CBT and ACT, which keeps my research grounded in applied questions about help-seeking, stigma, and intervention.",
+    about_appt:"Current Appointments",
+    appt1:"Full-time Professor, UNAH<span>National Autonomous University of Honduras · since 2014</span>",
+    appt3:"Coordinator, Research Ethics Committee<span>Faculty of Social Sciences, UNAH</span>",
+    appt4:"Research &amp; Extension Coordinator<span>MSc Clinical Psychology, UNAH</span>",
+    about_recog:"Recognition",
+    recog1:"#1 Researcher in Psychology, Honduras<span>Scopus · 2025</span>",
+    recog2:"UNAH Professional Researcher Award<span>First psychologist to receive it · 2024</span>",
+    recog3:"Top 10 Researcher at UNAH<span>2023 &amp; 2024</span>",
+    fc1_t:"Interpersonal &amp; Gender-Based Violence",fc1_d:"Predictors of IPV perpetration and victimization, corporal punishment attitudes, violence desensitization, and barriers to help-seeking — including the under-studied case of male victims.",
+    fc2_t:"Mental Health &amp; Help-Seeking",fc2_d:"Depression, anxiety, suicide risk, and the psychological burden of the COVID-19 pandemic, alongside attitudes toward professional psychological help in university and general populations.",
+    fc3_t:"Childhood Experiences",fc3_d:"Adverse and benevolent childhood experiences as antecedents of adult flourishing, emotion regulation, risk behavior, and problematic technology use.",
+    fc4_t:"Personality &amp; Flourishing",fc4_d:"Light and Dark Triad traits, narcissism, and positive psychology constructs as mediators of well-being, academic engagement, and digital behavior.",
+    fc5_t:"Psychometrics &amp; Measurement",fc5_d:"Validation and cross-cultural adaptation of screening instruments — flourishing, depression, anxiety, somatization, and novel scales for violence desensitization.",
+    fc6_t:"Cross-Cultural Collaboration",fc6_d:"Contributing Honduran data to global consortia on romantic love, mate preferences, social norms, and health attitudes across 90–175 countries.",
+    f_all:"All",f_violence:"Violence &amp; Gender",f_mental:"Mental Health",f_positive:"Personality &amp; Flourishing",f_psy:"Psychometrics",f_cc:"Cross-Cultural",f_edu:"Education &amp; Society",
+    t_violence:"Violence &amp; Gender",t_mental:"Mental Health",t_positive:"Personality &amp; Flourishing",t_psy:"Psychometrics",t_cc:"Cross-Cultural",t_edusoc:"Education &amp; Society",
+    mode_complete:"Show complete list (53)",mode_selected:"Show selected only",
+    pub_note:"Currently showing a curated selection; use the toggle above to view all 53 peer-reviewed publications. The complete, continuously updated record is available via <a href='https://orcid.org/0000-0002-7865-7593' target='_blank' rel='noopener'>ORCID 0000-0002-7865-7593</a>. Several manuscripts on IPV perpetration, violence desensitization, and neuromyth endorsement are currently under review.",
+    sec_edu:"Education",
+    edu_h1:"Doctoral &amp; Doctoral Training",edu_h2:"Master's &amp; Undergraduate",
+    edu_i1:"<div class='deg'>Ph.D. in Psychology</div><div class='inst'>University of Granada, Spain</div><div class='yr'>2024 – present · Thesis: Psychological correlates of intimate partner violence in the Honduran context</div>",
+    edu_i2:"<div class='deg'>Ph.D. in Education — Methodology of Educational Research</div><div class='inst'>Universidad Internacional Iberoamericana (UNIB), Puerto Rico</div><div class='yr'>2017 – 2022 · Thesis: Determinants of university students' attitudes toward research (quantitative and qualitative)</div>",
+    edu_i3:"<div class='deg'>M.Sc. in Social Communication of Science</div><div class='inst'>Universidad Internacional de Valencia (VIU), Spain · 2021–2022</div>",
+    edu_i4:"<div class='deg'>M.Sc. in Social and Economic Research — <em>Summa Cum Laude</em></div><div class='inst'>National Autonomous University of Honduras (UNAH) · 2014–2016</div>",
+    edu_i5:"<div class='deg'>M.Sc. in Mindfulness &amp; Emotional Management · M.Sc. in Team Management</div><div class='inst'>ENEB &amp; Universidad Internacional Isabel I de Castilla, Spain · 2022–2023</div>",
+    edu_i6:"<div class='deg'>B.A. in Psychology — <em>Cum Laude</em></div><div class='inst'>National Autonomous University of Honduras (UNAH) · 2008–2013</div>",
+    sec_service:"Academic Service &amp; Teaching",
+    svc_h1:"Peer Review",svc_p1:"journals &amp; agencies served, including:",
+    svc_h2:"Thesis Supervision",svc_p2:"Graduate thesis advising across seven master's programs at UNAH and UNITEC:",
+    svc_l2:"<li>Clinical Psychology (UNAH &amp; UNITEC)</li><li>Psychometry and Education</li><li>Work and Organizational Psychology</li><li>Social and Economic Research</li><li>Public Health</li><li>Development and International Cooperation</li>",
+    svc_h3:"Teaching",svc_p3:"Undergraduate and postgraduate instruction in:",
+    svc_l3:"<li>Research Methods in Psychology (I–IV)</li><li>Qualitative Methods</li><li>Applied &amp; Quantitative Data Analysis</li><li>Statistics Applied to Clinical Psychology</li><li>Psychological Evaluation</li><li>Epistemology &amp; Theoretical Models</li>",
+    foot_title:"Open to collaboration on <em>mental health, violence, cross-cultural differences, and measurement</em> research.",
+    fl_email:"Email",fl_loc:"Location",
+    foot_b1:"Ψ Miguel Landa-Blanco · Curriculum Vitae 2026",foot_b2:"National Autonomous University of Honduras"
+  },
+  es: {
+    doctitle:"Miguel Landa-Blanco — Psicólogo e investigador",
+    nav_about:"Perfil",nav_research:"Investigación",nav_pubs:"Publicaciones",nav_edu:"Formación",nav_service:"Servicio",nav_contact:"Contacto",
+    hero_eyebrow:"Psicólogo e investigador · Tegucigalpa, Honduras",
+    hero_role:"Investigador cuantitativo en salud mental, violencia interpersonal y florecimiento humano en América Latina, con experiencia complementaria en estudios cualitativos.",
+    hero_lede:"Reconocido en 2025 como el investigador hondureño mejor posicionado en psicología según Scopus y en ciencias sociales según AD Scientific Index. En 2024 fue el primer psicólogo en recibir el Premio al Investigador Profesional de la UNAH. Profesor a tiempo completo en la Universidad Nacional Autónoma de Honduras, Doctor en Educación con énfasis en metodología de la investigación educativa, y actualmente doctorando en Psicología en la Universidad de Granada.",
+    hero_btn1:"Ver publicaciones",hero_btn2:"Perfil ORCID ↗",hero_btn3:"Contacto",
+    m_h:"Índice h",m_i10:"Índice i10",m_cit:"Citas",m_q:"Publicaciones en revistas Q1 y Q2",
+    sec_about:"Perfil",sec_focus:"Líneas de investigación",sec_pubs:"Publicaciones",sec_edu:"Formación académica",sec_service:"Servicio académico y docencia",
+    about_p1:"Estudio cómo los factores psicológicos, relacionales y estructurales se asocian con la salud mental y la violencia interpersonal en contextos de ingresos bajos y medios, con énfasis empírico en la población hondureña.",
+    about_p2:"Mi trabajo aborda la <strong>violencia de pareja íntima</strong>, las experiencias adversas y benevolentes en la infancia, el riesgo suicida, las actitudes de género y los correlatos de personalidad del bienestar. Metodológicamente, mi producción es cuantitativa y utiliza <strong>validación psicométrica, modelos de regresión y mediación, análisis de clases latentes y análisis factorial</strong>, complementada con algunos estudios cualitativos basados en entrevistas, grupos focales y codificación temática.",
+    about_p3:"Además de mi línea propia de investigación, coordino funciones de investigación y ética en la Escuela de Ciencias Psicológicas de la UNAH y participo en <strong>consorcios transculturales</strong> de gran escala, con datos de más de 100 países, sobre preferencias de pareja, normas sociales y actitudes hacia la salud.",
+    about_p4:"También ejerzo como psicólogo clínico con formación en TCC y ACT, lo que mantiene mi investigación vinculada a problemas aplicados sobre búsqueda de ayuda, estigma e intervención.",
+    about_appt:"Vinculaciones actuales",
+    appt1:"Profesor a tiempo completo, UNAH<span>Universidad Nacional Autónoma de Honduras · desde 2014</span>",
+    appt3:"Coordinador, Comité de Ética en Investigación<span>Facultad de Ciencias Sociales, UNAH</span>",
+    appt4:"Coordinador de Investigación y Extensión<span>Maestría en Psicología Clínica, UNAH</span>",
+    about_recog:"Reconocimientos",
+    recog1:"Investigador mejor posicionado en psicología en Honduras<span>Scopus · 2025</span>",
+    recog2:"Premio al Investigador Profesional de la UNAH<span>Primer psicólogo en recibirlo · 2024</span>",
+    recog3:"Entre los 10 investigadores más destacados de la UNAH<span>2023 y 2024</span>",
+    fc1_t:"Violencia interpersonal y de género",fc1_d:"Predictores de la perpetración y victimización por violencia de pareja íntima, actitudes hacia el castigo físico, desensibilización a la violencia y barreras para buscar ayuda, incluyendo el caso poco estudiado de los hombres víctimas.",
+    fc2_t:"Salud mental y búsqueda de ayuda",fc2_d:"Depresión, ansiedad, riesgo suicida y carga psicológica asociada con la pandemia por COVID-19, junto con actitudes hacia la búsqueda de ayuda psicológica profesional en población universitaria y general.",
+    fc3_t:"Experiencias en la infancia",fc3_d:"Experiencias adversas y benevolentes en la infancia como antecedentes del florecimiento en la adultez, la regulación emocional, las conductas de riesgo y el uso problemático de la tecnología.",
+    fc4_t:"Personalidad y florecimiento",fc4_d:"Rasgos de la Tríada Oscura y la Tríada Luminosa, narcisismo y constructos de psicología positiva como mediadores del bienestar, el compromiso académico y la conducta digital.",
+    fc5_t:"Psicometría y medición",fc5_d:"Validación y adaptación transcultural de instrumentos breves de evaluación: florecimiento, depresión, ansiedad, somatización y nuevas escalas para medir desensibilización a la violencia.",
+    fc6_t:"Colaboración transcultural",fc6_d:"Aporte de datos hondureños a consorcios globales sobre amor romántico, preferencias de pareja, normas sociales y actitudes hacia la salud en estudios con cobertura de 90 a 175 países.",
+    f_all:"Todas",f_violence:"Violencia y género",f_mental:"Salud mental",f_positive:"Personalidad y florecimiento",f_psy:"Psicometría",f_cc:"Transcultural",f_edu:"Educación y sociedad",
+    t_violence:"Violencia y género",t_mental:"Salud mental",t_positive:"Personalidad y florecimiento",t_psy:"Psicometría",t_cc:"Transcultural",t_edusoc:"Educación y sociedad",
+    mode_complete:"Ver lista completa (53)",mode_selected:"Ver solo destacadas",
+    pub_note:"Actualmente se muestra una selección de publicaciones destacadas. Use el botón superior para ver la lista completa de 53 publicaciones revisadas por pares. El registro completo y actualizado está disponible en <a href='https://orcid.org/0000-0002-7865-7593' target='_blank' rel='noopener'>ORCID 0000-0002-7865-7593</a>. Varios manuscritos sobre perpetración de violencia de pareja íntima, desensibilización a la violencia y aceptación de neuromitos se encuentran en revisión.",
+    sec_edu:"Formación académica",
+    edu_h1:"Doctorados",edu_h2:"Maestrías y licenciatura",
+    edu_i1:"<div class='deg'>Doctorado en Psicología</div><div class='inst'>Universidad de Granada, España</div><div class='yr'>2024 – actualidad · Tesis: Correlatos psicológicos de la violencia de pareja íntima en el contexto hondureño</div>",
+    edu_i2:"<div class='deg'>Doctorado en Educación — Metodología de la Investigación Educativa</div><div class='inst'>Universidad Internacional Iberoamericana (UNIB), Puerto Rico</div><div class='yr'>2017 – 2022 · Tesis: Determinantes de las actitudes del estudiantado universitario hacia la investigación</div>",
+    edu_i3:"<div class='deg'>Maestría en Comunicación Social de la Ciencia</div><div class='inst'>Universidad Internacional de Valencia (VIU), España · 2021–2022</div>",
+    edu_i4:"<div class='deg'>Maestría en Investigación Social y Económica — <em>Summa Cum Laude</em></div><div class='inst'>Universidad Nacional Autónoma de Honduras (UNAH) · 2014–2016</div>",
+    edu_i5:"<div class='deg'>Maestría en Mindfulness y Gestión Emocional · Maestría en Dirección de Equipos</div><div class='inst'>ENEB y Universidad Internacional Isabel I de Castilla, España · 2022–2023</div>",
+    edu_i6:"<div class='deg'>Licenciatura en Psicología — <em>Cum Laude</em></div><div class='inst'>Universidad Nacional Autónoma de Honduras (UNAH) · 2008–2013</div>",
+    sec_service:"Servicio académico y docencia",
+    svc_h1:"Revisión por pares",svc_p1:"revistas y agencias académicas, entre ellas:",
+    svc_h2:"Dirección de tesis",svc_p2:"Dirección de tesis de posgrado en programas de maestría de la UNAH y UNITEC:",
+    svc_l2:"<li>Psicología Clínica (UNAH y UNITEC)</li><li>Psicometría y Educación</li><li>Psicología del Trabajo y de las Organizaciones</li><li>Investigación Social y Económica</li><li>Salud Pública</li><li>Desarrollo y Cooperación Internacional</li>",
+    svc_h3:"Docencia",svc_p3:"Docencia de pregrado y posgrado en:",
+    svc_l3:"<li>Métodos de Investigación en Psicología (I–IV)</li><li>Métodos Cualitativos</li><li>Análisis de Datos Aplicado y Cuantitativo</li><li>Estadística Aplicada a la Psicología Clínica</li><li>Evaluación Psicológica</li><li>Epistemología y Modelos Teóricos</li>",
+    foot_title:"Abierto a colaboraciones en investigación sobre <em>salud mental, violencia, diferencias transculturales y medición</em>.",
+    fl_email:"Correo",fl_loc:"Ubicación",
+    foot_b1:"Ψ Miguel Landa-Blanco · Currículum vitae 2026",foot_b2:"Universidad Nacional Autónoma de Honduras"
+  }
+};
+
+let lang = 'en';
+let mode = 'selected';
+let topic = 'all';
+
+const modebtn = document.getElementById('modebtn');
+
+function setModeBtnLabel(){
+  modebtn.innerHTML = (mode === 'selected') ? I18N[lang].mode_complete : I18N[lang].mode_selected;
+}
+
+function applyLang(l){
+  lang = l;
+  document.documentElement.lang = l;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k = el.getAttribute('data-i18n');
+    if(I18N[l][k] !== undefined) el.innerHTML = I18N[l][k];
+  });
+  document.title = I18N[l].doctitle;
+  document.getElementById('langbtn').textContent = (l === 'en') ? 'ES' : 'EN';
+  setModeBtnLabel();
+}
+
+document.getElementById('langbtn').addEventListener('click', ()=>{
+  applyLang(lang === 'en' ? 'es' : 'en');
+});
+
+function applyFilters(){
+  document.querySelectorAll('#publist .pub').forEach(p=>{
+    const inMode = (mode === 'complete') || (p.dataset.selected === '1');
+    const cats = p.dataset.cat.split(' ');
+    const inTopic = (topic === 'all') || cats.includes(topic);
+    p.classList.toggle('hidden', !(inMode && inTopic));
+  });
+  document.querySelectorAll('.year-group').forEach(g=>{
+    const anyVisible = g.querySelector('.pub:not(.hidden)');
+    g.classList.toggle('hidden', !anyVisible);
+  });
+}
+
+document.querySelectorAll('.filter').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    topic = btn.dataset.f;
+    applyFilters();
+  });
+});
+
+modebtn.addEventListener('click', ()=>{
+  mode = (mode === 'selected') ? 'complete' : 'selected';
+  setModeBtnLabel();
+  applyFilters();
+});
+
+// reveal
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach((el,i)=>{
+  el.style.transitionDelay = Math.min((i % 6) * 0.06, 0.36) + 's';
+  io.observe(el);
+});
+window.addEventListener('load', ()=>{
+  document.querySelectorAll('header .reveal, .metrics').forEach((el,i)=>{
+    setTimeout(()=> el.classList.add('in'), 80 + i*90);
+  });
+});
+
+applyFilters();
+setModeBtnLabel();
+</script>
+</body>
+</html>
